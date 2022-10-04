@@ -18,7 +18,7 @@ namespace PProjetoOnTheFly_Banco
 
                 Console.WriteLine("                                       <<<<Bem-Vindo ao menu do aeroporto On The Fly!>>>>                          ");
 
-                Console.WriteLine("Informe a opção desejada:\n1-Passageiros\n2-Companhias Aereas\n3-Aeronaves\n4-Voo\n5-Passagens\n6-Vendas\n7-Restritos\n0-Sair\nOpção: ");
+                Console.WriteLine("Informe a opção desejada:\n1-Passageiros\n2-Companhias Aereas\n3-Aeronaves\n4-Voo\n5-Passagens\n6-Vendas\n7-Restritos\n\nOpção: ");
 
                 try
                 {
@@ -47,33 +47,31 @@ namespace PProjetoOnTheFly_Banco
                 switch (opcao)
                 {
                     case 1:
-                        Passageiros.AcessarPassageiro();
+                        Passageiros.PrincipalPassageiro();
                         break;
                     case 2:
-                        Companhia_Aerea.AcessarCompanhia();
+                        Companhia_Aerea.PrincipalCompanhia();
                         break;
 
                     case 3:
-                        Aeronave.AcessarAeronave();
+                        Aeronave.PrincipalAeronave();
                         break;
 
-                    /*case 4:
-                        Voo.AcessarVoo();
+                     case 4:
+                        Voo.PrincipalVoo();
                         break;
 
-                    /*case 5:
-                        Passagem.AcessarPassagem();
+                    case 5:
+                        Passagem.PrincipalPassagem();
                         break;
 
                     /*case 6:
                         Venda.AcessarVenda();
                         break;*/
 
-                     
-
-                    //case 7:
-                       // Restricao.AcessarRestritos();
-                       // break;
+                      case 7:
+                       RestritosBloqueados.PrincipalRestritosBloqueados();
+                       break;
                 }
 
             } while (opcao < 1 || opcao > 7);

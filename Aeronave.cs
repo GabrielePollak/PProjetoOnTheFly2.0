@@ -449,7 +449,7 @@ namespace PProjetoOnTheFly_Banco
             Console.ReadKey();
             return;
         }
-        public static void AcessarAeronave()
+        public static void PrincipalAeronave()
         {
             int opcao = -1;
             bool condicaoDeParada;
@@ -458,7 +458,7 @@ namespace PProjetoOnTheFly_Banco
             {
                 Console.Clear();
 
-                Console.WriteLine("MENU DAS AERONAVES\n");
+                Console.WriteLine("                                    <<<<MENU DAS AERONAVES>>>>                                 \n");
 
                 Console.WriteLine("1-Cadastrar Aeronave\n2-Editar Aeronave\n3-Imprimir Aeronaves");
                 Console.Write("\nOpção: ");

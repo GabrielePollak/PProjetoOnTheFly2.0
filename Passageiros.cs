@@ -595,7 +595,7 @@ namespace PProjetoOnTheFly_Banco
             conexao.Close();
             return;
         }
-        public static void AcessarPassageiro()
+        public static void PrincipalPassageiro()
         {
             int opcao = -1;
             bool validacao;

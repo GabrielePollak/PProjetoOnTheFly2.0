@@ -497,7 +497,7 @@ namespace PProjetoOnTheFly_Banco
             return;
         }
         
-        public static void AcessarCompanhia()
+        public static void PrincipalCompanhia()
         {
             int opcao = 0;
             bool condicaoDeParada;
